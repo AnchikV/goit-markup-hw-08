@@ -1,0 +1,35 @@
+// BASE
+@import "./base/variables";
+@import "./base/base";
+
+//UTILS
+@import "./utils/hidden";
+@import "./utils/current";
+
+
+//COMPONENTS
+@import "./components/button";
+@import "./components/modals";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/work";
+@import "layout/team";
+@import "./layout/filters";
+@import "./layout/cards";
+@import "./layout/client1";
+//*@import "./layout/client";
+@import "./layout/footer";
+
+@import "./layout/menu";
+
+
+
+
+
+
+
+
+
