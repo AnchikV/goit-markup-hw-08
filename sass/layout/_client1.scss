@@ -23,9 +23,9 @@
   }
 }
 .client__link {
-    &:hover {
-        border-color: var(--active-color);
-    }
+  &:hover {
+    border-color: var(--active-color);
+  }
 }
 
 .client__icon {
@@ -35,7 +35,8 @@
 
 .client__item {
   margin: 15px;
-
+  height: 92px;
+  
   @media screen and (max-width: 767px) {
     width: calc((100% - 4 * 15px) / 2);
   }

@@ -14,6 +14,7 @@ img {
 .body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
+  position: relative;
 }
 
 .link {
@@ -43,8 +44,14 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 address {
