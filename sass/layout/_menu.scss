@@ -48,7 +48,9 @@
 
 .menu-container {
   &.is-open {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -67,8 +69,6 @@
 }
 
 .mobile-list {
-  margin-top: 300px;
-
   @media screen and (min-width: 768px) {
     display: none;
     margin-top: 300px;
@@ -79,7 +79,7 @@
   display: flex;
   align-items: flex-end;
   gap: 20px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     margin-left: 42px;
   }
 

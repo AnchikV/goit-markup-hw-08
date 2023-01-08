@@ -646,7 +646,14 @@ address {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -670,9 +677,6 @@ address {
   }
 }
 
-.mobile-list {
-  margin-top: 300px;
-}
 @media screen and (min-width: 768px) {
   .mobile-list {
     display: none;
@@ -689,7 +693,7 @@ address {
           align-items: flex-end;
   gap: 20px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .mobile-social {
     margin-left: 42px;
   }
@@ -809,12 +813,13 @@ address {
 
 .header-nav__link {
   position: relative;
+  color: #757575;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  /*color: var(--main-color);*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,7 +889,6 @@ address {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 @media screen and (min-width: 200px) {
   .header-link {
@@ -912,7 +916,6 @@ address {
 .header-link-m {
   font-size: 24px;
   line-height: 1.1666666667;
-  color: #757575;
 }
 
 .link.current {
@@ -1023,15 +1026,12 @@ address {
   }
 }
 
-.about {
-  padding-bottom: 0px;
-}
-
-@media screen and (min-width: 300px) {
-  .about__list {
-    padding-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 0px;
   }
 }
+
 @media screen and (min-width: 767px) {
   .about__list {
     display: -webkit-box;
@@ -1039,7 +1039,6 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1212,7 +1211,7 @@ address {
 
 @media screen and (min-width: 767px) {
   .work__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -1765,6 +1764,7 @@ address {
       max-width: 80%;
     }
   */
+  width: 100vw;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
