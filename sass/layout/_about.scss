@@ -3,9 +3,14 @@
 }
 
 .about__list {
+  @media screen and (min-width: 300px) {
+      
+      padding-bottom: 30px;
+    }
   @media screen and (min-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 60px;
       }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap
@@ -13,8 +18,11 @@
 }
 
 .about__item {
+  @media screen and (max-width: 767px) {
+    margin: 15px;
+  }
   
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
